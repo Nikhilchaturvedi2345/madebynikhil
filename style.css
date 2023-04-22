@@ -1,0 +1,271 @@
+.roller {
+    width: 150px;
+    height: 30px;
+    overflow: hidden;
+
+}
+
+.roller-list {
+    list-style: none;
+    margin: 0;
+    animation: rollerRoll 6s alternate-reverse infinite;
+    color: rgb(202, 47, 47);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes rollerRoll {
+    0% {
+        margin-top: 0%;
+    }
+
+    34% {
+        margin-top: -15%;
+    }
+
+    100% {
+        margin-top: -33%;
+    }
+}
+
+.backgrounder1 {
+    width: 650px;
+    height: 600px;
+    background-image: url("https://thumbs.dreamstime.com/b/blue-shoes-29507491.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.backgrounder2 {
+    width: 750px;
+    height: 600px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: url("https://cf.shopee.ph/file/46ae0782f7ddd899084a70d77a70a83c");
+    background-size: contain;
+}
+
+.textbackgrounder {
+    background-image: url("./new.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+.overflower {
+    overflow-x: scroll;
+}
+
+.overflower::-webkit-scrollbar {
+    width: 0;
+}
+
+.col-2 {
+    margin: 0 15px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 50% !important;
+    left: -300px !important;
+    width: 500px !important;
+    height: 20px !important;
+    display: flex;
+    justify-content: space-around;
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
+}
+
+.carousel .carousel-indicators button {
+    background-color: rgba(248, 248, 248);
+    border: 2px solid rgb(154, 6, 6);
+}
+
+.carousel .carousel-indicators button.active {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(154, 6, 6);
+}
+
+.carousel-inner{
+    height: 600px !important;
+}
+.carousel-caption {
+    top: 30%;
+    bottom: auto;
+}
+.autosetbackground{
+    width: 450px;
+    height: 600px; 
+    background: url('./images/young-woman-with-shopping-bags.png');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain;
+}
+.backgrounder3{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/askforexpert.png');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.backlight{
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://cdn.shopify.com/s/files/1/0645/6465/articles/Depositphotos_168746958_S_1296x.jpg?v=1635848049');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.setheight1{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://christou.imgix.net/2022/02/Comfy.jpg?auto=format&w=403&h=555&fit=crop&dpr=1.25');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin-bottom: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.setheight2{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://christou.imgix.net/2022/02/Fresh.jpg?auto=format&w=403&h=555&fit=crop&dpr=1.25');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin-bottom: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.overlaper{
+    position: absolute;
+    display: flex;
+    top: 420px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:450px;
+    height: 480px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2ch;
+
+}
+.innersplit{
+    background-image: url('https://static.christou1910.com/app/themes/christou-theme/dist/images/spritesheets/brush-horizontal-grey_6f607215.png');
+    background-position: center;
+    background-size: 600% 100%;
+    height: 100px;
+}
+
+@media (max-width: 992px) {
+    .middler {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        overflow: auto;
+    }
+
+    .backgrounder1 {
+        width: 450px;
+        height: 400px;
+        background-position: bottom;
+    }
+
+    .backgrounder2 {
+        width: 450px;
+        height: 400px;
+        background-position: bottom;
+    }
+
+    .heighter {
+        height: 500px;
+    }
+    .autosetbackground{
+        width: 400px;
+        height: 500px; 
+    }
+    .setheight1{
+        margin-left: 0;
+    }
+    
+
+}
+ @media (max-width:700px) {
+    .defaluter{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        white-space: nowrap;
+        margin: 15px 0px;
+    }
+ }
+@media (max-width: 1396px) {
+
+    .overlaper{
+        width: 30ch;
+        height: 32ch;
+        top: 50%;
+        font-size: 25px;
+
+
+    }
+
+}
+@media (max-width: 430px) {
+    .backgrounder1 {
+        width: 450px;
+        height: 300px;
+        background-position: bottom;
+    }
+
+    .backgrounder2 {
+        width: 450px;
+        height: 300px;
+        background-position: bottom;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        top: 50% !important;
+        left: -180px !important;
+        width: 300px !important;
+        height: 20px !important;
+        display: flex;
+        justify-content: space-around;
+    }
+    .autosetbackground{
+        width: 250px;
+        height: 400px; 
+    }
+    .backgrounder3{
+        height: 250px;
+    }
+    .overlaper{
+        width: 350px;
+        height: 380px;
+        top: 58%;
+        letter-spacing: 0;
+        padding: 10px;
+    }
+    .setheight1{
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
